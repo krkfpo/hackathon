@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>District 6 Football Club</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="./logo.jpg" alt="logo" width="8%">
+        <!-- <a class="navbar-brand" href="#">Discrict 6 Football Club</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutUS.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./comitteeMembers.html">Our Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./SignUpToNewsLetter.html">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ContactUs.html">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+    <div class="titleArea">
+      <h1 style="text-align:center; padding-bottom: 25px; margin:50px; position:relative; z-index:100">WE WOULD LOVE TO HEAR FROM YOU!</h1>
+    </div>
+    <div class="d-flex m-5">
+      <div class="col-md-6 py-2 d-flex">
+        <form action="/processMessageForm" method="POST" class="box1">
+          <div class="">
+            <label class="cont_label">Name</label>
+            <input type="text" name="name" value="" placeholder="Enter Name" class="form-control" required><br>
+            <label class="cont_label">Email</label>
+            <input type="text" name="email" value="" placeholder="Enter Email Id" class="form-control" required><br>
+            <div class="">
+              <label class="cont_label mr-1">Message</label>
+            <textarea name="message" rows="3" cols="50" placeholder="Type your message here" class="form-control"></textarea>
+           </div><br>
+           <button type="submit" class="btn btn-default submit_btn">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 py-2 d-flex">
+        <div class="box1">
+          <div>
+            <h5>Call Us</h5>
+            <a href="tel:+44123456789">+44123456789</a>
+          </div>
+          <div>
+            <h5>Email Us</h5>
+            <a href="mailto:district6@football.com">district6@football.com</a>
+          </div>
+          <div>
+            <h5>Location</h5>
+            <p>Public Rights of Way Team,
+              Highway Operations,
+              Cardiff Council,
+              Room 301,
+              County Hall,
+              Cardiff,
+              CF10 4UW
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mapouter contact_map"><div class="gmap_canvas contact_map"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=County%20Hall%2C%20Cardiff%2C%20CF10%204UW&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://vincheckeurope.eu">vincheckeurope.eu</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://embedmaps.info">Embed Google Maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+    <!-- reference for map https://embedmaps.info/?gclid=CjwKCAjwoP6LBhBlEiwAvCcthKolUzAEyOd_5Ebxj39oznpNHM3A0MPbA1RrCEraTPnFE4wP_iDpmBoCm40QAvD_BwE    -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
