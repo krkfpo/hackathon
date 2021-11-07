@@ -1,0 +1,20 @@
+.box1{
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 10px;
+  height: auto;
+  flex-grow: inherit;
+  width: 100%;
+}
+.submit_btn{
+  border-radius: 10px;
+  border: 1px solid green;
+  background-color: green;
+  color: #ffff;
+}
+.contact_map{
+  width:100%!important;
+}
+.cont_label{
+  float: left;
+}
